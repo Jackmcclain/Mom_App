@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mom's App</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+  </head>
+  <body>
+    <div class="tri">
+      <h1>Trimester
+        <select class="trimester">
+          <option value="">option 1</option> 
+          <option value="">option 2</option>
+          <option value="">option 3</option>
+        </select>
+        </h1>
+    </div>
+       <button id="create" type="button" onclick="">Create</button>
+       <button id="edit" type="button" onclick="">Edit</button>
+      <div class="guide">
+          <h2> Subject
+            <select class="subject">
+              <option value="">math</option>
+            </select>
+          </h2>
+          <h2>Assignment
+          <select class="assignment" style="display:hidden">
+            <option value=""></option>
+            <option value="">lesson 1</option>
+          </select>
+          <input type="text" class="assignment_create"></input>
+          </h2>
+      </div>
+      <p>Date: 
+        <input type="text" id="datepicker">
+      </p>
+      <textarea rows="6" cols="50" id="descr">Description...</textarea>
+      <div class="study">
+        <h2>Standard 1
+        <select class="Standards1 Standards">
+          <option value="">std 1</option>
+
+        </select>
+        </h2>
+        <h2>Standard 2
+          <select class="Standards2 Standards">
+            <option value="">std 2</option>
+
+          </select>
+        </h2>
+        <h2>Standard 3
+          <select class="Standards3 Standards">
+            <option value="">std 3</option>
+
+          </select>    
+        </h2>
+      </div>
+      <table class="studentGrades" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>student name</th>
+                <th>std1</th>
+                <th>std2</th>
+                <th>std3</th>
+            </tr>
+        </thead>
+    </table>
+    <button id="saveit" type="button" onclick="">Save</button>
+    <script src="script.js"></script>
+  <div class="error">can you see this?</div>
+  </body>
+</html>
